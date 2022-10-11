@@ -28,6 +28,7 @@
     "react/react-in-jsx-scope": "off",
     "no-console": "warn",
     "arrow-body-style": "error",
-    "prefer-template": "error"
+    "prefer-template": "error",
+    "react/self-closing-comp": "error"
   }
 }
