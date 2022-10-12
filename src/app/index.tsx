@@ -1,40 +1,15 @@
 import { FC } from 'react';
-import { IconTreeTriangleDown } from '@douyinfe/semi-icons';
-import {
-  Button,
-  Dropdown,
-  InputNumber,
-  Space,
-  SplitButtonGroup
-} from '@douyinfe/semi-ui';
+import { Divider, Space } from '@douyinfe/semi-ui';
+
+import MultSelect from '~/mult-select';
+import NestTab from '~/nest-tab';
 
 const App: FC = () => (
-  <Space>
-    <InputNumber
-      insetLabel='屏蔽警报'
-      style={{ width: 160 }}
-      suffix={<div className='semi-input-inset-label'>小时</div>}
-      hideButtons
-    />
-    <SplitButtonGroup>
-      <Button theme='solid'>确定</Button>
-      <Dropdown
-        clickToHide
-        trigger='click'
-        position='bottomRight'
-        render={
-          <Dropdown.Menu>
-            <Dropdown.Title>快速选项</Dropdown.Title>
-            <Dropdown.Item>屏蔽 30 分钟</Dropdown.Item>
-            <Dropdown.Item>屏蔽 1 小时</Dropdown.Item>
-            <Dropdown.Item>屏蔽 6 小时</Dropdown.Item>
-            <Dropdown.Item>屏蔽 12 小时</Dropdown.Item>
-          </Dropdown.Menu>
-        }
-      >
-        <Button theme='solid' icon={<IconTreeTriangleDown />}></Button>
-      </Dropdown>
-    </SplitButtonGroup>
+  <Space vertical style={{ width: '100%' }} align='start' spacing='loose'>
+    <Divider align='left'>输入 + 快捷操作</Divider>
+    <MultSelect />
+    <Divider align='left'>嵌套 Tabs</Divider>
+    <NestTab />
   </Space>
 );
 

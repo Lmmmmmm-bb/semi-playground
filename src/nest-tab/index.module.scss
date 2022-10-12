@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+
+  :global {
+    .semi-tabs-bar-button {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .docsWrapper {
+    margin-top: 8px;
+  }
+}
