@@ -1,6 +1,6 @@
+import styled from 'styled-components';
 import { Tabs } from '@douyinfe/semi-ui';
 import { TabsProps } from '@douyinfe/semi-ui/lib/es/tabs';
-import styled from 'styled-components';
 
 export const WrapperStyled = styled.div`
   width: 100%;
