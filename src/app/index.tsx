@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import { Divider, Space } from '@douyinfe/semi-ui';
 
-import MultSelect from '~/mult-select';
 import NestTab from '~/nest-tab';
 import ChartPanel from '~/chart-panel';
+import MultSelect from '~/mult-select';
 import { ChartPanelWrapper } from './styled';
 
 const App: FC = () => (
