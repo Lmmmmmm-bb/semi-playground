@@ -5,6 +5,7 @@ import NestTab from '~/nest-tab';
 import ChartPanel from '~/chart-panel';
 import MultSelect from '~/mult-select';
 import { ChartPanelWrapper } from './styled';
+import Flex from '~/flex';
 
 const App: FC = () => (
   <Space vertical style={{ width: '100%' }} align='start' spacing='loose'>
@@ -17,6 +18,17 @@ const App: FC = () => (
       <ChartPanel />
       <ChartPanel />
     </ChartPanelWrapper>
+    <Divider align='left'>弹性容器 Flex</Divider>
+    <Flex spacing='loose'>
+      <Flex>
+        <div>Hello</div>
+        <div>World</div>
+      </Flex>
+      <Flex vertical>
+        <div>Hello</div>
+        <div>World</div>
+      </Flex>
+    </Flex>
   </Space>
 );
 
